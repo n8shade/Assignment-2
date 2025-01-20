@@ -3,7 +3,7 @@
     font-optical-sizing: auto;
 }
 
-header {
+header, .header-container {
     margin: 20px 140px;
 }
 
@@ -16,8 +16,11 @@ nav,
     justify-content: space-between;
     align-items: center;
 }
-
-.nav-1>img {
+.hamburger-menu{
+    display: none;
+    margin-left: auto;
+}
+.nav-1>img, .hamburger-menu>img{
     width: 62px;
     height: 62px;
 }
@@ -64,6 +67,7 @@ nav,
 
 .header-container {
     display: flex;
+    width: auto;
     gap: 50px;
 }
 
@@ -98,4 +102,46 @@ nav,
     line-height: 30px;
     letter-spacing: 0%;
     text-align: center;
+}
+.header-container>img{
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (max-width:576px){
+    header, .header-container{
+        margin: 15px;
+    }
+    header{
+        border-bottom: 1px solid orange ;
+    }
+    .nav-2, .nav-1>h3, .nav-3{
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+        margin-left: auto;
+    }
+    .header-container{
+        flex-direction: column-reverse;
+    }
+    .header-container>img{
+        width: 100%;
+        height: 100%;
+    }
+    .h-contents{
+        margin: -80px auto;
+        align-items: center;
+    }
+    .h-contents>h2, .h-contents>p{
+        text-align: center;
+    }
+    .h-contents>button{
+        display: flex;
+        margin-left: 22%;
+        align-items: center;
+        justify-content: center;
+
+    }
 }
