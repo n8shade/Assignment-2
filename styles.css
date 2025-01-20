@@ -1,0 +1,101 @@
+.quicksand-normal> {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+}
+
+header {
+    margin: 20px 140px;
+}
+
+/* navbar styles */
+nav,
+.nav-1,
+.nav-2>ul,
+.nav-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-1>img {
+    width: 62px;
+    height: 62px;
+}
+
+.nav-1>h3 {
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    padding: auto 16px;
+    margin-left: 10px;
+}
+
+.nav-2 {
+    margin: 16px auto;
+}
+
+.nav-2>ul {
+    gap: 32px;
+}
+
+.nav-2>ul>li {
+    list-style: none;
+}
+
+.nav-2>ul>li>a {
+    text-decoration: none;
+}
+
+.nav-3>button {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    background: rgb(254, 163, 1);
+    width: 197px;
+    height: 51px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    gap: 50px;
+}
+
+.h-contents {
+    margin: 121px 0px;
+}
+
+.h-contents>h2 {
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 61px;
+    text-align: left;
+}
+
+.h-contents>p {
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: left;
+}
+
+.h-contents>button {
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: none;
+    background: rgb(17, 17, 17);
+    width: 197px;
+    height: 51px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+}
