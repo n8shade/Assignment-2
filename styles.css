@@ -9,7 +9,7 @@ main {
 
 header,
 .header-container,
-main {
+.s-cu {
     margin: 1.25rem 8.75rem;
 }
 
@@ -126,9 +126,9 @@ nav,
 .s-cu>h2 {
     color: rgb(0, 0, 0);
     font-family: Quicksand;
-    font-size: 46px;
+    font-size: 3rem;
     font-weight: 300;
-    line-height: 57.5px;
+    line-height: 3.6rem;
     letter-spacing: 0%;
     text-align: center;
     margin-bottom: 5rem;
@@ -302,8 +302,11 @@ nav,
 .stories {
     display: flex;
     flex-direction: column;
+    width: fit-content;
     align-items: center;
+    margin: 1.25rem 8.75rem;
     margin-top: 3.75rem;
+    min-height: 15px;
     background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
@@ -359,17 +362,17 @@ nav,
 .sc-5 button {
     color: rgb(255, 255, 255);
     font-family: Raleway;
-    font-size: 15.34px;
+    font-size: 1rem;
     font-weight: 100;
-    line-height: 28.76px;
+    line-height: 1.8rem;
     letter-spacing: 0%;
     text-align: left;
     text-transform: capitalize;
-    padding: 15px 20px;
+    padding: 1rem 1.2rem;
     border-radius: 3rem;
     border: none;
     margin-left: 2.1rem;
-    margin-top: -10rem;
+    margin-top: -5rem;
 }
 
 .sc-1>button {
@@ -430,12 +433,12 @@ nav,
     margin-top: 5rem;
     color: rgb(255, 255, 255);
     font-family: Quicksand;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 1.9rem;
     letter-spacing: 0%;
     text-align: left;
-    border-radius: 12px;
+    border-radius: .8rem;
     background: rgb(17, 17, 17);
     padding: 1rem 5rem;
     margin-bottom: 3rem;
@@ -446,8 +449,7 @@ nav,
 @media screen and (max-width:576px) {
 
     header,
-    .header-container,
-    main {
+    .header-container {
         margin: 15px;
     }
 
@@ -498,8 +500,11 @@ nav,
     }
 
     .s-cu>h2 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2rem;
     }
 
     .std-cu {
@@ -509,5 +514,49 @@ nav,
     .btn-left,
     .btn-right {
         display: none;
+    }
+
+    .stories {
+        margin: 0 0 0 0;
+        width: 100%;
+        
+        }
+
+    .sc-1 {
+        display: none;
+    }
+
+    .story-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sc-1 button,
+    .sc-2 button,
+    .sc-3 button,
+    .sc-4 button,
+    .sc-5 button {
+        align-items: center;
+        text-align: center;
+        font-size: .5rem;
+        line-height: .5rem;
+        padding: 1rem;
+    }
+
+    .stories>button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        font-size: .9rem;
+        line-height: .8rem;
+        text-align: left;
+        padding: 1rem 1rem;
+    }
+    .sc-2,
+    .sc-3,
+    .sc-4,
+    .sc-5{
+
     }
 }
