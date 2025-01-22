@@ -5,6 +5,7 @@
 
 main {
     background-image: url("assets/bg.png");
+    margin-bottom: 0px;
 }
 
 header,
@@ -81,6 +82,9 @@ nav,
 }
 
 .h-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 121px 0px;
 }
 
@@ -304,7 +308,7 @@ nav,
     flex-direction: column;
     width: fit-content;
     align-items: center;
-    margin: 1.25rem 8.75rem;
+    margin: 0px 8.75rem;
     margin-top: 3.75rem;
     min-height: 15px;
     background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
@@ -444,9 +448,76 @@ nav,
     margin-bottom: 3rem;
 }
 
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 8.75rem;
+    padding: 123px 228px 124px 140px;
+    background-color: rgb(1, 172, 253);
+}
+
+.contact-1 {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.kids {
+    display: flex;
+    flex-direction: row;
+}
+
+.kids>p {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+#k-des {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.contact-2>p {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.contact-3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact-3>p {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
 
 
 @media screen and (max-width:576px) {
+
+    main,
+    footer {
+        margin: 0 0 0 0;
+    }
 
     header,
     .header-container {
@@ -479,7 +550,6 @@ nav,
 
     .h-contents {
         margin: -80px auto;
-        align-items: center;
     }
 
     .h-contents>h2,
@@ -519,8 +589,7 @@ nav,
     .stories {
         margin: 0 0 0 0;
         width: 100%;
-        
-        }
+    }
 
     .sc-1 {
         display: none;
@@ -553,10 +622,15 @@ nav,
         text-align: left;
         padding: 1rem 1rem;
     }
-    .sc-2,
-    .sc-3,
-    .sc-4,
-    .sc-5{
 
+    footer {
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        padding: 20px 10px;
+    }
+
+    .contact-1 {
+        max-width: fit-content;
     }
 }
