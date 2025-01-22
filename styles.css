@@ -10,7 +10,7 @@ main {
 
 header,
 .header-container,
-.s-cu {
+.s-cu, marquee {
     margin: 1.25rem 8.75rem;
 }
 
@@ -452,7 +452,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     margin: 0 8.75rem;
-    padding: 123px 228px 124px 140px;
+    padding: 123px 200px 124px 140px;
     background-color: rgb(1, 172, 253);
 }
 
@@ -520,7 +520,7 @@ footer {
     }
 
     header,
-    .header-container {
+    .header-container, marquee {
         margin: 15px;
     }
 
